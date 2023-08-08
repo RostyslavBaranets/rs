@@ -1,0 +1,43 @@
+<div id="game" class="game">
+  <audio id="lose" src="../../audio/lose.mp3"></audio>
+  <audio id="win" src="../../audio/win.mp3"></audio>
+  <audio id="click" src="../../audio/click.mp3"></audio>
+  <audio id="flag" src="../../audio/flag.mp3"></audio>
+
+  <ul class="game__results">latest 10 results:
+    <li class="game__results-item"></li>
+    <li class="game__results-item"></li>
+    <li class="game__results-item"></li>
+    <li class="game__results-item"></li>
+    <li class="game__results-item"></li>
+    <li class="game__results-item"></li>
+    <li class="game__results-item"></li>
+    <li class="game__results-item"></li>
+    <li class="game__results-item"></li>
+    <li class="game__results-item"></li>
+  </ul>
+
+  <div class="game__setings">
+    <input type="radio" id="radio_10" name="radio" class="game__radio" value="10" checked>
+    <label for="radio_10">10x10</label>
+    <input type="radio" id="radio_15" name="radio" class="game__radio" value="15">
+    <label for="radio_10">15x15</label>
+    <input type="radio" id="radio_25" name="radio" class="game__radio" value="25">
+    <label for="radio_10">25x25</label>
+    <br>
+
+    <label for="#numMines">Mines</label>
+    <input type="number" id="numMines" class="game__mines" value="10" min="10" max="99">
+    <button class="game__new">New game</button>
+  
+    <div class="game__clicks">Clicks: 0</div>
+    <div class="game__time">Time: 0</div>
+  </div>
+  
+  
+  <div class="game__audio">
+    <div class="game__audio_cross"></div>
+  </div>
+
+  <div class="game__theme">dark</div>
+</div>

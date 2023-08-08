@@ -1,0 +1,124 @@
+.game{
+  position: relative;
+  left: -30%;
+  width: 160%;
+  display: flex;
+  flex-direction: row;
+  padding: 20px;
+  background-color: #acacac;
+
+  .game__results{
+    padding: 3px;
+    margin: 3px;
+    border: black solid 1px;
+    height: 50%;
+  }
+
+  .game__audio{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    top: 0;
+    right: 0;
+    background: url(../../images/audio.png);
+    background-size: contain;
+    background-color: #7b7b7b;
+    cursor: pointer;
+  
+    .game__audio_cross{
+      display: none;
+      position: relative;
+      height: 3px;
+      width: 100%;
+      top: 50%;
+      background-color: black;
+      transform: rotate(45deg);
+    }
+  }
+
+  .game__theme{
+    position: fixed;
+    width: 50px;
+    height: 30px;
+    bottom: 0;
+    right: 0;
+    background-color: #7b7b7b;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .game-cells{
+    width: 340px;
+    //border-top: #999 solid 10px;
+    //border-left: #999 solid 10px;
+    //border-bottom: #d8d8d8 solid 10px;
+    //border-right: #d8d8d8 solid 10px;
+    //padding-right: 10px;
+    display: flex;
+  
+    .game-cells__cell{
+      font-size: 25px;
+      text-align: center;
+      width: 25px;
+      height: 25px;
+      background-color: #d8d8d8;
+      border-top: #ffffff solid 5px;
+      border-left: #ffffff solid 5px;
+      border-bottom: #999 solid 5px;
+      border-right: #999 solid 5px;
+      cursor: pointer;
+  
+      &_flag{
+        background: url('../../images/flag.ico');
+        background-color: #d8d8d8;
+        background-size: 25px;
+      }
+  
+      &_mine{
+        border: red solid 5px;
+        background: url('../../images/bomb.png');
+        background-color: red;
+        background-size: 25px;
+        cursor: default;
+      }
+    }
+  
+    .game-cells__cell_open{
+
+      background-color: #d8d8d8;
+      border: #7b7b7b solid 5px;
+      border-bottom: #cbcbcb solid 5px;
+      border-right: #cbcbcb solid 5px;
+      background-image: none;
+      background-color: #afafaf;
+      cursor: default;
+  
+      &-1{
+        color: blue;
+      }
+      &-2{
+        color: green;
+      }
+      &-3{
+        color: red;
+      }
+      &-4{
+        color: purple;
+      }
+      &-5{
+        color: brown;
+      }
+      &-6{
+        color: gray;
+      }
+      &-7{
+        color: black;
+      }
+      &-8{
+        color: yellow;
+      }
+    }
+  
+  }
+}
